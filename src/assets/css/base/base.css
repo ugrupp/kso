@@ -1,0 +1,23 @@
+@layer base {
+  html,
+  body {
+    @apply text-base antialiased;
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    @apply bg-blue-500 text-gray-900;
+  }
+
+  [x-cloak] {
+    display: none !important;
+  }
+
+  [x-cloak="visibility"] {
+    visibility: hidden !important;
+  }
+
+  address {
+    @apply block not-italic;
+  }
+}

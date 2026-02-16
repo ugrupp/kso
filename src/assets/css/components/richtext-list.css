@@ -1,0 +1,43 @@
+.richtext {
+  & ul,
+  & ol {
+    grid-area: sublist;
+
+    & > li {
+      @apply grid gap-x-[0.75em] items-start justify-start;
+      grid-template-columns: max-content 1fr;
+      grid-template-areas:
+        "bullet content"
+        "bullet sublist";
+
+      @apply before:shrink-0;
+      &::before {
+        grid-area: bullet;
+      }
+    }
+  }
+
+  /* UL: bullet point */
+  & ul {
+    & > li {
+      @apply before:bg-current before:w-[0.3em] before:h-[0.3em] before:rounded-full before:translate-y-[0.625em];
+    }
+  }
+
+  & ul.richtext__ul--fancy {
+    @apply text-base leading-snug font-serif font-normal;
+  }
+
+  /* OL: counter */
+  & ol {
+    counter-reset: ol;
+
+    & > li {
+      &::before {
+        @apply font-bold;
+        counter-increment: ol;
+        content: counters(ol, ".") ".";
+      }
+    }
+  }
+}

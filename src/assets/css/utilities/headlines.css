@@ -1,0 +1,23 @@
+@utility headline--1 {
+  @apply font-bold leading-tight text-xl hyphens-auto;
+}
+
+@utility headline--2 {
+  @apply font-bold leading-tight text-lg hyphens-auto;
+}
+
+@utility headline--3 {
+  @apply font-bold leading-snug text-base;
+}
+
+@utility headline--4 {
+  @apply font-bold leading-snug text-sm;
+}
+
+@utility headline--5 {
+  @apply font-bold leading-normal text-xs;
+}
+
+@utility headline--6 {
+  @apply font-bold leading-relaxed text-xs;
+}

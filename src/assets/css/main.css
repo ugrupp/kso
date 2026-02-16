@@ -1,1 +1,9 @@
-@import "tailwindcss";
+@import "tailwindcss" source("../../../src");
+
+@import "./base/fonts.css";
+@import "./base/base.css";
+
+@import "./utilities/headlines.css";
+
+@import "./components/richtext.css";
+@import "./components/container-grid.css";

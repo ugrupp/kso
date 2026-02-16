@@ -1,0 +1,29 @@
+@layer components {
+  .container-grid {
+    --padding: theme("width.5");
+    --columns: 12;
+    --center-columns-size: calc(var(--container-6xl) / var(--columns));
+
+    @apply grid;
+    grid-template-columns:
+      [full-start]
+      minmax(var(--padding), 1fr)
+      [content-start]
+      repeat(var(--columns), minmax(0, var(--center-columns-size)))
+      [content-end]
+      minmax(var(--padding), 1fr)
+      [full-end];
+
+    @variant sm {
+      --padding: theme("width.10");
+    }
+
+    @variant md {
+      --padding: theme("width.16");
+    }
+
+    @variant xl {
+      --padding: theme("width.20");
+    }
+  }
+}

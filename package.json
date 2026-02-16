@@ -1,0 +1,29 @@
+{
+  "name": "kso",
+  "version": "1.0.0",
+  "description": "Katja Schulze-Oechtering – Private Praxis für Physiotherapie",
+  "type": "module",
+  "scripts": {
+    "build:eleventy": "eleventy",
+    "build:css": "pnpx @tailwindcss/cli -i ./src/assets/css/main.css -o ./_site/assets/css/main.css",
+    "build": "pnpm run \"/^build:.*/\"",
+    "dev:eleventy": "eleventy --serve",
+    "dev:css": "pnpx @tailwindcss/cli -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --watch",
+    "dev": "pnpm run \"/^dev:.*/\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Urs Grupp",
+    "email": "urs@21sieben.de",
+    "url": "https://www.21sieben.de/"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.6.5",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}

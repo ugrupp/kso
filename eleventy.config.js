@@ -9,6 +9,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/public": "/" });
 
+  eleventyConfig.setServerOptions({
+    watch: ["_site/assets/css/*.css", "_site/assets/js/*.js"],
+  });
+
   return {
     dir: {
       input: "src",

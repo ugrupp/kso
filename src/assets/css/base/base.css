@@ -1,8 +1,15 @@
+/* TODO: colors */
+
 @layer base {
   html,
   body {
-    @apply text-base antialiased;
+    /* TODO: bg = content gradient start/end */
+    @apply text-base bg-red-500 text-fuchsia-950 antialiased;
     scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-y: scroll;
   }
 
   ::selection {
@@ -19,5 +26,10 @@
 
   address {
     @apply block not-italic;
+  }
+
+  /* Ensure elements load hidden before sal runs */
+  body:not(.no-sal) [data-sal]:not(.sal-animate) {
+    visibility: hidden;
   }
 }

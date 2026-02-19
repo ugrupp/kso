@@ -35,20 +35,17 @@
     <meta name="generator" content="{{ eleventy.generator }}">
   </head>
   <body>
-    <a href="#main" class="sr-only">Zum Content springen</a>
+    <a href="#start" class="sr-only">Zum Content springen</a>
     <a href="#menu" class="sr-only">Zur Navigation springen</a>
 
-    {# {% include "partials/topbar.njk" %}
-    {% include "partials/menu-overlay.njk" %} #}
+    <div class="relative z-20 bg-linear-to-b from-stone-300 via-white to-stone-300 rounded-b-[50vh]">
+      {% include "partials/hero.njk" %}
 
-    <div class="flex flex-col relative z-10 pt-20 xl:pt-30 min-h-screen" id="start">
-      <main id="main" class="w-full grow">
+      <main id="start" class="relative min-h-[50vh] py-40">
         {{ content | safe }}
       </main>
-
-      {# <div class="relative z-10">
-        {% include "partials/footer.njk" %}
-      </div> #}
     </div>
+
+    {% include "partials/footer.njk" %}
   </body>
 </html>

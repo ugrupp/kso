@@ -1,17 +1,15 @@
 .richtext {
   /* Inline elements */
   & :is(p, address, pre, table) {
-    margin-bottom: 1.6em;
+    @apply mb-[1.4em] md:mb-[1.7em];
   }
 
   & hr {
-    margin-top: 3.2em;
-    margin-bottom: 3.2em;
+    @apply my-[2.8em] md:my-[3.4em];
   }
 
   & blockquote {
-    margin-top: 3.2em;
-    margin-bottom: 3.2em;
+    @apply my-[2.8em] md:my-[3.4em];
 
     & > :first-child {
       margin-top: 0;
@@ -25,54 +23,23 @@
   /* Headlines */
   & h1,
   & .headline--h1 {
-    @apply mt-8 sm:mt-10 xl:mt-12;
-    @apply mb-6 xl:mb-8;
+    @apply my-[1.4em] md:my-[1.7em];
   }
 
   & h2,
   & .headline--h2 {
-    @apply mt-8 sm:mt-10 xl:mt-11;
-    @apply mb-6;
+    @apply my-[1.4em] md:my-[1.7em];
   }
 
   & h3,
   & .headline--h3 {
-    @apply mt-8 sm:mt-10;
-    @apply mb-4 sm:mb-6;
-  }
-
-  & h4,
-  & .headline--h4 {
-    @apply mt-8 sm:mt-10;
-    @apply mb-4 xl:mb-6;
-  }
-
-  & h5,
-  & .headline--h5 {
-    @apply mt-8 sm:mt-10;
-    @apply mb-4;
-  }
-
-  & h6,
-  & .headline--h6 {
-    @apply mt-8 sm:mt-10;
-    @apply mb-2 xl:mb-4;
-  }
-
-  & .headline--meta {
-    margin-bottom: 0;
-  }
-
-  &
-    .headline--meta
-    + :is(h1, .headline--h1, h2, .headline--h2, h3, .headline--h3, h4, .headline--h4, h5, .headline--h5, h6, .headline--h6) {
-    margin-top: 0.1em;
+    @apply my-[1.4em] md:my-[1.7em];
   }
 
   /* Lists */
   & ul,
   & ol {
-    margin-bottom: 1.6em;
+    @apply mb-[1.4em] md:mb-[1.7em];
 
     & li {
       &:not(:last-of-type) {
@@ -89,12 +56,11 @@
   }
 
   & .richtext__ul--fancy {
-    margin-top: 1.6em;
-    margin-bottom: 1.6em;
+    @apply my-[1.4em] md:my-[1.7em];
 
     & li {
       &:not(:last-of-type) {
-        margin-bottom: 1.2em;
+        margin-bottom: 1em;
       }
     }
   }

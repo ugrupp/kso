@@ -2,38 +2,23 @@
 @import "./richtext-list.css";
 
 .richtext {
-  --text-color: theme("colors.black");
-  --primary-color: theme("colors.blue.500");
+  --text-color: theme("colors.dark");
   color: var(--text-color);
 
-  @apply text-sm;
+  @apply text-14 md:text-16;
 
   & small {
-    @apply text-xs;
+    @apply text-10;
   }
 
   & strong {
-    @apply font-bold;
-  }
-
-  & em {
-    @apply italic;
-  }
-
-  & mark {
-    background-color: var(--primary-color);
+    @apply underline;
   }
 
   & a {
     overflow-wrap: anywhere;
-    color: var(--primary-color);
-    text-decoration-color: var(--primary-color);
-    @apply font-bold underline duration-300;
-
-    &:hover,
-    &:focus-visible {
-      color: var(--text-color);
-    }
+    color: var(--text-color);
+    @apply underline;
   }
 
   & abbr {
@@ -43,30 +28,13 @@
   }
 
   & hr {
-    @apply bg-gray-300 h-0.5;
+    @apply bg-dark h-0.5;
     border: 0 none;
   }
 
   & blockquote {
     @apply border-l-4 pl-4 py-1;
     border-color: var(--text-color);
-  }
-
-  & code {
-    @apply text-sm bg-black p-1 rounded-md;
-  }
-
-  & pre {
-    @apply overflow-x-auto bg-black rounded-md py-3 px-4 text-sm;
-
-    & code {
-      padding: 0;
-      background-color: transparent;
-      color: inherit;
-      font-size: inherit;
-      font-family: inherit;
-      line-height: inherit;
-    }
   }
 
   /* Headlines */
@@ -85,50 +53,12 @@
     @apply headline--3;
   }
 
-  & h4,
-  & .headline--h4 {
-    @apply headline--4;
-  }
-
-  & h5,
-  & .headline--h5 {
-    @apply headline--5;
-  }
-
-  & h6,
-  & .headline--h6 {
-    @apply headline--6;
-  }
-
   /* Links in headlines */
-  &
-    :is(
-      h1,
-      .headline--h1,
-      h2,
-      .headline--h2,
-      h3,
-      .headline--h3,
-      h4,
-      .headline--h4,
-      h5,
-      .headline--h5,
-      h6,
-      .headline--h6
-    )
-    a {
+  & :is(h1, .headline--h1, h2, .headline--h2, h3, .headline--h3) a {
     @apply text-current;
   }
 }
 
 .richtext--on-light {
-  --text-color: theme("colors.gray.900");
-
-  & code {
-    @apply bg-gray-100;
-  }
-
-  & pre {
-    @apply bg-gray-100;
-  }
+  --text-color: theme("colors.off-white");
 }

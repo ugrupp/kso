@@ -25,7 +25,7 @@
   }
 
   & ul.richtext__ul--fancy {
-    @apply text-base leading-snug font-serif font-normal;
+    @apply text-17 md:text-19 leading-relaxed;
   }
 
   /* OL: counter */
@@ -34,7 +34,6 @@
 
     & > li {
       &::before {
-        @apply font-bold;
         counter-increment: ol;
         content: counters(ol, ".") ".";
       }

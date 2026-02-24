@@ -1,10 +1,7 @@
-/* TODO: colors */
-
 @layer base {
   html,
   body {
-    /* TODO: bg = content gradient start/end */
-    @apply text-base bg-red-500 text-fuchsia-950 antialiased;
+    @apply text-16 bg-off-white text-dark font-sans font-extralight antialiased;
     scroll-behavior: smooth;
   }
 
@@ -13,7 +10,7 @@
   }
 
   ::selection {
-    @apply bg-blue-500 text-gray-900;
+    @apply bg-dark text-off-white;
   }
 
   [x-cloak] {

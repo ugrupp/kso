@@ -1,4 +1,5 @@
 import { HtmlBasePlugin } from "@11ty/eleventy";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(HtmlBasePlugin);
@@ -11,6 +12,21 @@ export default function (eleventyConfig) {
 
   eleventyConfig.setServerOptions({
     watch: ["_site/assets/css/*.css", "_site/assets/js/*.js"],
+  });
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // output image formats
+    formats: ["avif", "webp", "jpeg"],
+
+    // output image widths
+    widths: ["auto"],
+
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+      },
+    },
   });
 
   return {

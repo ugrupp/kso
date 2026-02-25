@@ -1,0 +1,35 @@
+.headline-notch {
+  @supports not (clip-path: shape(from 0 0, close)) {
+    @apply rounded-full bg-dark;
+  }
+}
+
+.headline-notch__text {
+  @supports (clip-path: shape(from 0 0, close)) {
+    @apply rounded-l-full bg-dark;
+  }
+}
+
+.headline-notch__notch {
+  aspect-ratio: 131.6 / 70.24;
+
+  @supports (clip-path: shape(from 0 0, close)) {
+    @apply bg-dark;
+
+    clip-path: shape(
+      from 0% 0%,
+      curve to 22.79% 20.08% with 9.04% 0%/17.34% 7.32%,
+      curve to 35.78% 31.48% with 25.85% 27.26%/30.67% 31.48%,
+      smooth to 48.76% 20.08% with 45.69% 27.26%,
+      curve to 71.54% 0% with 54.22% 7.32%/62.52% 0%,
+      curve to 100% 50% with 87.24% 0%/100% 22.42%,
+      smooth to 71.54% 100% with 87.24% 100%,
+      curve to 71.53% 100% with 71.54% 100%/71.54% 100%,
+      curve to 48.75% 79.92% with 62.5% 100%/54.21% 92.68%,
+      curve to 35.77% 68.52% with 45.69% 72.74%/40.88% 68.52%,
+      curve to 22.78% 79.92% with 30.65% 68.52%/25.85% 72.74%,
+      curve to 0% 100% with 17.32% 92.68%/9.03% 100%,
+      close
+    );
+  }
+}

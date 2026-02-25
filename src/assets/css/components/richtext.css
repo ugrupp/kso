@@ -59,6 +59,10 @@
   }
 }
 
-.richtext--on-light {
+.richtext--on-dark {
   --text-color: theme("colors.off-white");
+
+  ::selection {
+    @apply bg-off-white text-dark;
+  }
 }

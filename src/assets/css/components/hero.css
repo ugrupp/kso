@@ -1,0 +1,12 @@
+@theme {
+  --animate-hero-bg: hero-bg 30s cubic-bezier(0.2, 0, 0.8, 1) infinite alternate;
+
+  @keyframes hero-bg {
+    0% {
+      object-position: 0% 20%;
+    }
+    100% {
+      object-position: 0% 60%;
+    }
+  }
+}

@@ -1,8 +1,8 @@
 @layer components {
   .container-grid {
-    --padding: theme("width.5");
+    --padding: 1.875rem; /* 30px */
     --columns: 12;
-    --center-columns-size: calc(var(--container-6xl) / var(--columns));
+    --center-columns-size: calc(var(--container-960) / var(--columns));
 
     @apply grid;
     grid-template-columns:
@@ -15,15 +15,15 @@
       [full-end];
 
     @variant sm {
-      --padding: theme("width.10");
+      --padding: 3.75rem; /* 60px */
     }
 
     @variant md {
-      --padding: theme("width.16");
+      --padding: 5.625rem; /* 90px */
     }
 
-    @variant xl {
-      --padding: theme("width.20");
+    @variant lg {
+      --padding: 7.5rem; /* 120px */
     }
   }
 }

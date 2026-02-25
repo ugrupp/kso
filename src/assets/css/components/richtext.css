@@ -5,7 +5,7 @@
   --text-color: theme("colors.dark");
   color: var(--text-color);
 
-  @apply text-14 md:text-16;
+  @apply text-14 sm:text-16;
 
   & small {
     @apply text-10;

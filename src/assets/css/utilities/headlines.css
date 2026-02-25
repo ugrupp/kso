@@ -1,11 +1,11 @@
 @utility headline--1 {
-  @apply font-serif font-light leading-tight text-29 md:text-31;
+  @apply font-serif font-light leading-tight text-29 sm:text-31;
 }
 
 @utility headline--2 {
-  @apply font-serif font-light leading-snug text-22 md:text-28;
+  @apply font-serif font-light leading-snug text-22 sm:text-28;
 }
 
 @utility headline--3 {
-  @apply font-serif font-light leading-snug text-22 md:text-24;
+  @apply font-serif font-light leading-snug text-22 sm:text-24;
 }

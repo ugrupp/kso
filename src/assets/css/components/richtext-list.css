@@ -25,7 +25,7 @@
   }
 
   & ul.richtext__ul--fancy {
-    @apply text-17 md:text-19 leading-relaxed;
+    @apply text-17 sm:text-19 leading-relaxed;
   }
 
   /* OL: counter */

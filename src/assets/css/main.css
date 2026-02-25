@@ -2,6 +2,7 @@
 
 @import "./base/typography.css";
 @import "./base/colors.css";
+@import "./base/layout.css";
 @import "./base/base.css";
 
 @import "./utilities/headlines.css";

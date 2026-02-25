@@ -2,4 +2,14 @@
   class="relative min-h-screen rounded-full flex justify-center items-center bg-[violet]"
 >
   Hero
+
+  {# Arrow #}
+  <a
+    href="#start"
+    class="hidden md:flex absolute left-1/2 -translate-x-1/2 inset-y-22.5 w-2.75 flex-col items-center text-off-white hover:translate-y-2 duration-200"
+  >
+    <div class="w-2.25 bg-current h-px"></div>
+    <div class="h-full w-px mx-auto bg-current"></div>
+    {% svg "arrow-tip", "absolute bottom-0 left-0 w-full aspect-11/7 text-current" %}
+</a>
 </header>

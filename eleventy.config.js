@@ -1,5 +1,6 @@
 import { HtmlBasePlugin } from "@11ty/eleventy";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import svgSprite from "eleventy-plugin-svg-sprite";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(HtmlBasePlugin);
@@ -27,6 +28,10 @@ export default function (eleventyConfig) {
         decoding: "async",
       },
     },
+  });
+
+  eleventyConfig.addPlugin(svgSprite, {
+    path: "./src/assets/svg",
   });
 
   return {

@@ -1,0 +1,9 @@
+
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Group-3" transform="translate(1.000000, 1.000000)" stroke="currentColor">
+            <line x1="0.35" y1="0.35" x2="27.65" y2="27.65" id="Line"></line>
+            <line x1="27.65" y1="0.341463415" x2="0.35" y2="27.6585366" id="Line"></line>
+        </g>
+    </g>
+</svg>

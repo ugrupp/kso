@@ -36,23 +36,20 @@
     @apply my-[1.4em] sm:my-[1.7em];
   }
 
+  & h4,
+  & .headline--h4 {
+    @apply my-[1.4em] sm:my-[1.7em];
+  }
+
+  & h5,
+  & .headline--h5 {
+    @apply mt-[1.4em] sm:mt-[1.7em];
+  }
+
   /* Lists */
   & ul,
   & ol {
     @apply mb-[0.7em] sm:mb-[0.85em];
-
-    & li {
-      &:not(:last-of-type) {
-        margin-bottom: 0.5em;
-      }
-    }
-
-    /* Nested lists */
-    & ul,
-    & ol {
-      margin-top: 0.5em;
-      margin-bottom: 0;
-    }
   }
 
   & .richtext__ul--fancy {

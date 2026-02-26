@@ -37,17 +37,6 @@
   <body>
     {% svgsprite %}
 
-    <a href="#start" class="sr-only">Zum Content springen</a>
-    <a href="#menu" class="sr-only">Zur Navigation springen</a>
-
-    <div class="relative z-20 bg-linear-to-b from-off-white via-white via-62% to-off-white rounded-b-[50vh]">
-      {% include "partials/hero.njk" %}
-
-      <main id="start" class="relative min-h-[50vh] py-28 md:py-40 overflow-hidden">
-        {{ content | safe }}
-      </main>
-    </div>
-
-    {% include "partials/footer.njk" %}
+    {{ content | safe }}
   </body>
 </html>

@@ -18,7 +18,11 @@
   & a {
     overflow-wrap: anywhere;
     color: var(--text-color);
-    @apply underline;
+
+    &:hover,
+    &:focus-visible {
+      @apply underline;
+    }
   }
 
   & abbr {
@@ -53,8 +57,31 @@
     @apply headline--3;
   }
 
+  & h4,
+  & .headline--h4 {
+    @apply headline--4;
+  }
+
+  & h5,
+  & .headline--h5 {
+    @apply headline--5;
+  }
+
   /* Links in headlines */
-  & :is(h1, .headline--h1, h2, .headline--h2, h3, .headline--h3) a {
+  &
+    :is(
+      h1,
+      .headline--h1,
+      h2,
+      .headline--h2,
+      h3,
+      .headline--h3,
+      h4,
+      .headline--h4,
+      h5,
+      .headline--h5
+    )
+    a {
     @apply text-current;
   }
 }

@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+---
+
+<a href="#start" class="sr-only">Zum Content springen</a>
+
+<main id="start">
+  <a href="/" class="absolute top-7 right-7 flex items-center justify-center h-14 w-14">
+    {% svg "close", "w-1/2 h-1/2" %}
+    <span class="sr-only">Zurück zur Startseite</span>
+  </a>
+
+  {{ content | safe }}
+</main>

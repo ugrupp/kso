@@ -9,3 +9,11 @@
 @utility headline--3 {
   @apply font-serif font-light leading-snug text-22 sm:text-24;
 }
+
+@utility headline--4 {
+  @apply font-serif font-light leading-snug text-15 sm:text-17;
+}
+
+@utility headline--5 {
+  @apply font-serif font-light leading-snug text-15 sm:text-17;
+}

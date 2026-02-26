@@ -1,5 +1,29 @@
 {
   "title": "Katja Schulze-Oechtering – Private Praxis für Physiotherapie",
   "url": "https://www.kso.physio",
-  "year": "2026"
+  "year": "2026",
+  "navigation": [
+    {
+      "title": "Über mich",
+      "url": "#start"
+    },
+    {
+      "title": "Mein Angebot",
+      "url": "#angebot"
+    },
+    {
+      "title": "Kontakt",
+      "url": "#kontakt"
+    }
+  ],
+  "footerLinks": [
+    {
+      "title": "Impressum",
+      "url": "/impressum/"
+    },
+    {
+      "title": "Datenschutz",
+      "url": "/datenschutz/"
+    }
+  ]
 }

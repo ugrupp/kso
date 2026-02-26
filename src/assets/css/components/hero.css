@@ -10,3 +10,10 @@
     }
   }
 }
+
+@layer components {
+  .hero__nav {
+    height: calc(min(100vw, 100vh) / 2);
+    max-height: 250px;
+  }
+}

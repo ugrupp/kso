@@ -16,8 +16,8 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // output image widths
-    widths: ["auto"],
+    // output image formats
+    formats: ["webp", "jpeg", "svg"],
 
     htmlOptions: {
       imgAttributes: {

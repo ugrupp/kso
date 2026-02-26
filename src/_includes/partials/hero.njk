@@ -2,17 +2,55 @@
   class="relative min-h-screen rounded-full flex justify-center items-center overflow-hidden"
 >
   {# BG #}
-  <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 min-w-250 w-full">
+  <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 min-w-250 w-full pointer-events-none">
     <img
       src="./assets/images/bg.jpeg"
       alt=""
       class="w-full h-full object-cover object-center animate-hero-bg [animation-delay:-10s]"
     />
+  </div>
+
+  {# Content #}
+  <div class="relative z-10 w-full container-grid items-center gap-y-15">
+    {# Logo (desktop) #}
+    <div class="hidden md:block md:col-start-[content] md:col-end-7 xl:col-end-6">
+      <a href="/" class="block max-w-85">
+        <img
+          src="./assets/images/logo.svg"
+          alt="Katja Schulze-Oechtering"
+          class="w-full h-auto"
+        />
+      </a>
+    </div>
+
+    {# Logo (mobile) #}
+    <div class="col-start-7 col-end-[content] max-w-50 md:hidden relative">
+      <a href="/" class="block max-w-85">
+        <img
+          src="./assets/images/logo-signet.svg"
+          alt=""
+          class="h-[93%] w-auto"
+          eleventy:pictureattr:class="absolute right-full mr-6 top-0 bottom-0 aspect-109/120 flex items-center justify-end"
+        />
+        <img
+          src="./assets/images/logo-text.svg"
+          alt="Katja Schulze-Oechtering"
+          class="w-full h-full"
+        />
+      </a>
+    </div>
+
+    {# Subline #}
+    <p class="col-start-7 col-end-[content] md:col-start-10 md:col-end-[content] xl:col-start-11 max-w-50 md:max-w-52.5 md:ml-auto">
+      {% svg "subline", "w-full h-auto aspect-[210/78.42]" %}
+      <span class="sr-only">Private Praxis für Physiotherapie und Biokinematik</span>
+    </p>
+  </div>
 
   {# Arrow #}
   <a
     href="#start"
-    class="hidden md:flex absolute left-1/2 -translate-x-1/2 inset-y-22.5 w-2.75 flex-col items-center text-off-white hover:translate-y-2 duration-200"
+    class="hidden md:flex absolute z-20 left-1/2 -translate-x-1/2 inset-y-22.5 w-2.75 flex-col items-center text-off-white hover:translate-y-3 duration-200"
   >
     <div class="w-2.25 bg-current h-px"></div>
     <div class="h-full w-px mx-auto bg-current"></div>

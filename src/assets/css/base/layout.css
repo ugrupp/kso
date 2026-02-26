@@ -1,6 +1,6 @@
 @theme {
   --container-*: initial;
-  --container-960: 61rem;
+  --container-960: 63.75rem;
 
   --breakpoint-*: initial;
   --breakpoint-xs: 32rem;

@@ -30,6 +30,7 @@
 
   --text-*: initial;
   --text-10: 0.625rem;
+  --text-11: 0.6875rem;
   --text-14: 0.875rem;
   --text-15: 0.9375rem;
   --text-16: 1rem;
@@ -46,6 +47,7 @@
 
   --leading-*: initial;
   --leading-tight: 1.2;
+  --leading-normal: 1.4375;
   --leading-snug: 1.375;
   --leading-relaxed: 1.625;
 

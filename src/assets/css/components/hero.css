@@ -1,12 +1,15 @@
 @theme {
-  --animate-hero-bg: hero-bg 30s cubic-bezier(0.2, 0, 0.8, 1) infinite alternate;
+  --animate-hero-bg: hero-bg 7.5s cubic-bezier(0.2, 0, 0.8, 1) infinite
+    alternate;
 
   @keyframes hero-bg {
     0% {
-      object-position: 0% 20%;
+      object-position: 0% 30%;
+      transform: scale(1);
     }
     100% {
-      object-position: 0% 60%;
+      object-position: 0% 35%;
+      transform: scale(1.1);
     }
   }
 }

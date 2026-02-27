@@ -2,6 +2,7 @@
   --color-*: initial;
   --color-white: #fff;
   --color-off-white: #f2ede8;
-  --color-off-white-dark: hsl(30, 28%, 88%);
   --color-dark: #38162a;
+
+  --color-hero-placeholder: #ceaabb;
 }

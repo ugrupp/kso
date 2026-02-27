@@ -1,7 +1,7 @@
 @layer base {
   html,
   body {
-    @apply text-16 bg-off-white text-dark font-sans font-extralight antialiased;
+    @apply text-16 leading-normal bg-off-white text-dark font-sans font-extralight antialiased;
     scroll-behavior: smooth;
   }
 

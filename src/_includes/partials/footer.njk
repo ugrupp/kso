@@ -1,6 +1,66 @@
-<footer
-  class="relative z-10 -mt-[50vh] pt-[50vh] flex justify-center items-center bg-[violet]"
-  id="kontakt"
->
-  <div class="py-40">Footer</div>
+<footer class="relative z-10 -mt-[50vh] pt-[50vh] flex justify-center items-center overflow-hidden" id="kontakt">
+  {# BG #}
+  <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 min-w-250 w-full pointer-events-none bg-hero-placeholder">
+    <img
+      src="./assets/images/bg.jpeg"
+      loading="eager"
+      alt=""
+      class="w-full h-full object-cover object-[0%_32%] md:animate-hero-bg"
+    />
+  </div>
+
+  {# Content #}
+  <div class="relative z-10 pt-20 xl:pt-56 pb-14 xl:pb-20">
+    <div class="relative">
+      <div class="container-grid gap-y-40 xl:gap-y-48">
+        <div class="col-start-[content] col-end-[content]">
+          <dl
+            class="grid grid-cols-[auto_auto] justify-start xl:grid-rows-2 xl:grid-cols-[auto_auto_1fr_auto_auto] gap-x-5 text-22 xl:text-27 leading-tight">
+            <dt>Telefon</dt>
+            <dd><a href="tel:+4915129837707">0151 298 377 07</a></dd>
+
+            <dt class="hidden">E-Mail</dt>
+            <dd class="xl:col-start-1 xl:row-start-2">
+              <a href="mailto:mail@kso-praxis.de">mail@</a>
+            </dd>
+            <dd class="xl:col-start-2 xl:row-start-2">
+              <a href="mailto:mail@kso-praxis.de">kso-praxis.de</a>
+            </dd>
+
+            <dt class="xl:col-start-4 xl:row-start-1">
+              <span class="sr-only">Adresse</span>
+            </dt>
+            <dd class="xl:col-start-5 xl:row-start-1 mt-5 xl:mt-0">
+              Maria-Theresia-Str. 22
+            </dd>
+            <dd class="xl:col-start-4 xl:row-start-2">79102</dd>
+            <dd class="xl:col-start-5 xl:row-start-2">Freiburg im Breisgau</dd>
+          </dl>
+        </div>
+
+        <div class="col-start-[content] col-end-[content]">
+          <div class="grid grid-cols-2">
+            <nav class="text-10 sm:text-11 leading-relaxed uppercase">
+              <ul>
+                {% for item in site.footerLinks %}
+                  <li>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </nav>
+
+            <p class="text-right text-10 sm:text-11 leading-relaxed">
+              Eine Website von <br /><a href="https://www.formatformat.de" target="_blank"
+                rel="noopener noreferrer">formatformat.de</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 2xl:top-0 2xl:bottom-auto xl:-translate-y-7">
+        {% svg "signet", "w-[90px] xl:w-[111px] h-auto aspect-[95/104.74]" %}
+      </div>
+    </div>
+  </div>
 </footer>

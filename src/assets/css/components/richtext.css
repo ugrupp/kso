@@ -8,7 +8,7 @@
   @apply text-14 sm:text-16;
 
   & small {
-    @apply text-10;
+    @apply text-10 sm:text-11;
   }
 
   & strong {

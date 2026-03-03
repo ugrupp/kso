@@ -1,6 +1,5 @@
 @theme {
-  --animate-hero-bg: hero-bg 7.5s cubic-bezier(0.2, 0, 0.8, 1) infinite
-    alternate;
+  --animate-hero-bg: hero-bg 10s cubic-bezier(0.2, 0, 0.8, 1) infinite alternate;
 
   @keyframes hero-bg {
     0% {
